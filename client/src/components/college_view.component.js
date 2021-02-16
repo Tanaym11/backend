@@ -20,7 +20,7 @@ export default class CollegeView extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/colleges/'+this.props.match.params.id)
+        axios.get('https://studentapp123123.herokuapp.com/colleges/'+this.props.match.params.id)
         .then(response => {
             this.setState({colleges: response.data})
         })

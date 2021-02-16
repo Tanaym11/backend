@@ -75,7 +75,7 @@ export default class CreateColleges extends Component{
 
         console.log(college);
 
-        axios.post('http://localhost:5000/colleges/add',college)
+        axios.post('https://studentapp123123.herokuapp.com/colleges/add',college)
             .then(res => console.log(res.data));
 
         this.setState({

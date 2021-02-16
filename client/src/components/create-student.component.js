@@ -23,7 +23,7 @@ export default class CreateStudent extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/colleges')
+        axios.get('https://studentapp123123.herokuapp.com/colleges')
         .then(response => {
             if (response.data.length > 0) {
                 this.setState({
@@ -73,7 +73,7 @@ export default class CreateStudent extends Component{
         }
         console.log(student)
 
-        axios.post('http://localhost:5000/students/add', student)
+        axios.post('https://studentapp123123.herokuapp.com/students/add', student)
         .then(res => console.log(res.data));
 
         window.location = "/";

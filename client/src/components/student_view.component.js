@@ -20,7 +20,7 @@ export default class StudentView extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/students/'+this.props.match.params.id)
+        axios.get('https://studentapp123123.herokuapp.com/students/'+this.props.match.params.id)
         .then(response => {
             this.setState({students: response.data})
         })

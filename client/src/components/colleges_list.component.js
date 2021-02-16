@@ -20,7 +20,7 @@ export default class CollegesList extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/colleges/')
+        axios.get('https://studentapp123123.herokuapp.com/colleges/')
         .then(response => {
             this.setState({colleges: response.data})
         })
