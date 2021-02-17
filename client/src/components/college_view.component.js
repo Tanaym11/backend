@@ -47,7 +47,9 @@ export default class CollegeView extends Component{
                         <tr>
                             <th>Name</th>
                             <th>Year_founded</th>
-                            <th>Location</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
                             <th>No_of_students</th>
                             <th>Courses</th>
                         </tr>
