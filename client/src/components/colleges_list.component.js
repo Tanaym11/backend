@@ -6,7 +6,9 @@ const College = props => (
     <tr>
         <td><Link to={"./view/college/"+props.college._id}>{props.college.Name}</Link></td>
         <td>{props.college.Year_founded}</td>
-        <td>{props.college.City},{props.college.State},{props.college.Country}</td>
+        <td>{props.college.City}</td>
+        <td>{props.college.State}</td>
+        <td>{props.college.Country}</td>
         <td>{props.college.No_of_students}</td>
         <td>{props.college.Courses}</td>
         </tr>
@@ -44,7 +46,9 @@ export default class CollegesList extends Component{
                         <tr>
                             <th>Name</th>
                             <th>Year_founded</th>
-                            <th>Location</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
                             <th>No_of_students</th>
                             <th>Courses</th>
                         </tr>

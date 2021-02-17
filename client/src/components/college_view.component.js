@@ -6,7 +6,9 @@ const College = props => (
     <tr>
         <td>{props.college.Name}</td>
         <td>{props.college.Year_founded}</td>
-        <td>{props.college.City},{props.college.State},{props.college.Country}</td>
+        <td>{props.college.City}</td>
+        <td>{props.college.State}</td>
+        <td>{props.college.Country}</td>
         <td>{props.college.No_of_students}</td>
         <td>{props.college.Courses}</td>
         </tr>
