@@ -32,7 +32,7 @@ export default class StudentsList extends Component{
     }
 
     deleteStudent(id){
-        axios.delete('http://localhost:5000/excercises/'+id)
+        axios.delete('https://studentapp123123.herokuapp.com/excercises/'+id)
         .then(res=> console.log(res.data));
         this.setState({
             students: this.state.students.filter(el => el._id !==  id)
